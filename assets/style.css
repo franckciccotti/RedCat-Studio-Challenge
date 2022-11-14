@@ -1,0 +1,717 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5;
+    /* font-size: 1em; */
+}
+h1{
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style-type: none;
+}
+
+/* BODY */
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin: 0px 0px 50px 0px;
+}
+
+
+/*** HEADER  ***/
+    /* NAV HEADER*/
+    #navHeader {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 20px 30px 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    /* LOGOS */
+    #logos {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        /* responsive */
+        margin: 0 10px;
+        display: none;
+    }
+    #logoFacebook {
+        margin-right: 5px;
+    }
+    #logoFacebook, #logoInstagram {
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logoFacebook:hover, #logoInstagram:hover {
+        background-color: red;
+        border: none;
+        color: white;
+    }
+    #logoFacebook > i {
+        font-size: 0.5rem;  
+    }
+    #logoInstagram > i {
+        font-size: 0.5rem;
+    }
+
+    /* LISTE & MALLSHOP */
+    #navHeader ul {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        font-size: 0.7rem;
+        /* width: 400px; */
+        margin: 0;
+        padding: 0;
+        /* padding: 10px 0; */
+        display: none;
+    }
+    #navHeader ul > li > a {
+        /* width: 300px; */
+        margin: 0 5px;
+    }
+    #navHeader ul > li > a:hover {
+        /* border: 1px solid red; */
+        border-bottom: 1px solid black;
+    }
+
+    /* MALLS & ICONES USER ET PANIER */
+    #navHeader > a {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        text-transform: lowercase ;
+        font-family: 'Festive', cursive;
+        font-size: 6rem;
+        flex-grow: 1;
+        padding-bottom: 20px;
+
+    }
+
+    /* BARRE DE RECHERCHE */
+    #navHeader form  {
+        /* border: 1px solid black; */
+        margin: 5px;
+        display: flex;
+        align-items: center;
+    }
+    #navHeader form p > input {
+        /* border: 1px solid black; */
+        font-weight: 300;
+        border: none;
+        border-bottom: 1px solid black;
+        margin-left: 5px;
+        padding: 5px 0;
+    }
+    
+    /* ICONES USER & BASKET */
+    #logos2 {
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        margin: 0 10px;        
+    }
+    #iconUser i {
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    #iconBasket i {
+        font-size: 1rem;
+        padding: 5px 0;
+        margin-left: 5px;
+    }
+
+
+/*** MAIN ***/
+    /* BLOC HERO */
+    #hero {
+        /* border: 1px solid black; */
+        background-image: url(../Images/hero.png);
+        /* background-size: contain; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: calc(210px); */
+        /* height: calc(100vw*0.7); */
+        height: calc(100vw*0.65);
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        position: relative;
+    }
+    #calque {
+        width: 50%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.4);
+        position: absolute;
+        left: 50%;
+    }
+    #hero h1 {
+        /* border: 1px solid black; */
+        font-size: calc(0.2rem + 3vw);
+        position: relative;
+    }
+    #hero h3 {
+        /* border: 1px solid black; */
+        color: rgb(247, 247, 76);
+        font-size: calc(0.10rem + 3vw);
+        margin: 10px 0;
+        position: relative;
+    } 
+    #hero > a {
+        /* border: 1px solid black; */
+        color: white;
+        font-size: calc(0.05rem + 3vw);
+        font-weight: 300;
+        text-decoration:underline;
+        position: relative;
+    }
+
+    /* BLOC PRESENTATION */
+    #presentation {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-flow: row wrap;
+        margin: 100px 50px;
+        margin-bottom: 0px;
+    }
+        /* BLOC PRESENTATION 1 */
+        #blocPresentation1 {
+            /* border: 1px solid black; */
+            width: 45%;
+        }
+        #blocPresentation1 h2 {
+            /* border: 1px solid black; */
+            text-transform: uppercase;
+            line-height: 35px;
+            font-size: 2rem;
+        }
+        #blocPresentation1 h3 {
+            /* border: 1px solid black; */
+            text-transform: uppercase;
+            color: pink;
+            font-size: 1.5rem;
+        }
+        #blocPresentation1 p {
+            /* border: 1px solid black; */
+            text-align: justify;
+            font-weight: 300;
+            font-size: 1rem;
+            width: 70%;
+            margin-bottom: 10px;
+        }
+        #blocPresentation1 a {
+            border-bottom: 1px solid black;
+            font-weight: 300;
+            font-size: 1rem;
+            padding-bottom: 5px;
+        }
+        #blocPresentation1 a:hover, #blocPresentation2 a:hover {
+            color: blue;
+            color: red;
+        }
+        
+        /* IMAGE 1 */
+        #image1 {
+            /* border: 1px solid red; */
+            max-width: 20%;
+            /* height: 50%; */
+            display: flex;
+            align-self: center;
+        }
+
+        /* BLOC PRESENTATION 2 */
+        #blocPresentation2 {
+            /* border: 1px solid black; */
+            width: 35%;
+            text-align: end;
+            position: relative;
+        }
+        #blocPresentation2 img:first-child {
+            /* border: 1px solid red; */
+            max-width: 60%;
+            position: absolute;
+            top: -150px;
+            left: -100px;
+        }
+        #blocPresentation2 img {
+            /* border: 1px solid black; */
+            max-width: 90%;
+            margin-top: 100px;
+        }
+        #blocPresentation2 h2 {
+            /* border: 1px solid black; */
+            text-transform: uppercase;
+            margin: 0px;
+            padding: 0px;
+            line-height: 35px;
+            margin-top: 30px;
+            font-size: 2rem;
+        }
+        #blocPresentation2 h3 {
+            /* border: 1px solid black; */
+            text-transform: uppercase;
+            color: rgb(43, 43, 158);
+            font-size: 1.5rem;
+        }
+        #blocPresentation2 p {
+            /* border: 1px solid black; */
+            font-weight: 300;
+            font-size: 1rem;
+            margin-left: 30px;
+            margin-bottom: 10px;
+
+        }
+        #blocPresentation2 a {
+            border-bottom: 1px solid black;
+            font-weight: 300;
+            font-size: 1rem;
+            padding-bottom: 5px;
+        }
+
+    /* PRODUITS CBD */
+    #produitCBD {
+        /* border: 1px solid red; */
+        color: rgb(67, 216, 216, 0.3);
+        margin: 0 30px;
+        font-weight: 900;
+        font-size: 4rem;
+        text-transform: uppercase;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* BLOC CATEGORIES */
+    #categories {
+        /* border: 1px solid black; */
+        background-image: url(../Images/a-trending-plant-species-in-cyberspace-with-the-te-2UDCC69.jpg);
+        background-size: cover;
+        text-transform: uppercase;
+        margin-top: 55px;
+        padding: 50px 50px;
+    }
+    #categories h2 {
+        line-height: 40px;
+    }
+    #categories h3 {
+        color: rgb(39, 39, 207);
+        font-weight: 400;
+    }
+
+    #cards {
+        /* border: 1px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        gap: 20px;
+        margin: 50px auto;
+        padding: 0px 25%;
+    }
+    .blocCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .blocCard:nth-child(2) {
+        /* border: 1px solid red; */
+        padding-bottom: 5px;
+    }
+
+    #card1 {
+        /* border: 1px solid red; */
+        margin-bottom: 20px;
+        height: 210px;
+        /* resp */
+        height: 17rem;
+        height: 17vw;
+        overflow: hidden;
+    }
+
+    #card1 > img:hover, #card3 > img:hover, #card5 > img:hover {
+        transform: scale(1.1);
+        transition: .5s ease;
+    }
+
+    #card2 img {
+        /* border: 1px solid black; */
+        height: 270px;
+        /* responsive */
+        height: 100%;
+    }
+    #card5 {
+        /* border: 1px solid red; */
+        height: 205px;
+        /* resp */
+        height: 40%;
+        overflow: hidden;
+    }
+    #card3 {
+        overflow: hidden;
+    }
+    #card3 img {
+        /* object-fit: contain; */
+        width: 100%;
+        height: 210px;
+        overflow: hidden;
+        /* resp */
+        height: 90%;
+    }
+    #card6 img {
+        /* border: 1px solid red; */
+        height: 270px;
+        /* resp */
+        height: 100%;
+        height: 22vw;
+    }
+
+    /* BLOC FORMULAIRE */
+    @keyframes ombre { 
+        0% { 
+            box-shadow: 0 0 15px red ; 
+        } 
+        100% { 
+            box-shadow: 0 0 15px yellow ; 
+        } 
+     } 
+    #form {
+        /* border: 1px solid black; */
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        margin: 50px auto;
+        padding: 0 auto;
+        
+    }
+     
+    .input {
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    input:focus { 
+        /* outline-offset: 2px ;  */
+        animation: ombre ease-in 5s alternate 500ms ;
+        outline: solid 3px lightgreen ; 
+    } 
+    
+    #nom, #prenom, #telephone, #email {
+        width: 40vw;
+        margin: 20px;
+        padding: 20px;
+    }
+    #message {
+        width: 83vw;
+        margin: 0px;
+        padding: 18px;
+        /* width: 40vw; */
+    }
+    #envoyer {
+        width: 83vw;
+        margin: 20px;
+        padding: 18px;
+        border: 1px solid rgb(34, 34, 209);
+        color: #1f1fd4;
+        background-color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    #envoyer:hover {
+        color: white;
+        background-color: #1f1fd4;
+    }
+
+    /* FOLLOW US */
+    #FS {
+        display: flex;
+        position: relative;
+    }
+    #FS1 {
+        /* border: 1px solid red; */
+        width: calc(10rem);
+        height: 50px;
+        margin: 0;
+    }
+    #followUs {
+        /* border: 1px solid red; */
+        color: rgb(67, 216, 216, 0.3);
+        margin: 0 auto;
+        font-weight: 900;
+        font-size: 3rem;
+        text-transform: uppercase;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* BLOC FOLLOW US */
+    #blocFollowUs {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        /* res */
+        margin: -10px 50px 0px 50px;
+    }
+    #blocFollowUs a {
+        /* border: 1px solid red; */
+        margin: 0 15px;
+    }
+    #blocFollowUs img {
+        /* border: 1px solid black; */
+        /* res */
+        width: 100vw;
+        height: 100%;
+    }
+
+/*** FOOTER ***/
+    footer {
+        /* border: 1px solid black; */
+        border: none;
+        border-top: 1px solid black;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px 50px;
+        font-weight: 300;
+    }
+    #navFooter ul {
+        display: flex; 
+    }
+    #navFooter ul li > a:hover {
+        border-bottom: 1px solid black;
+    }
+    footer a {
+        /* border: 1px solid black; */
+        flex-grow: 1; 
+        text-align: center;
+        margin: 0 20px;
+        width: 25%;
+        font-size: 0.5rem;
+    }
+    footer > a {
+        /* border: 1px solid black; */
+        font-family: 'Festive', cursive;
+        font-size: 5rem;
+        line-height: 100px;
+    }
+    footer p {
+        /* border: 1px solid black; */
+        width: 25%;
+        flex-grow: 0;
+        font-size: 0.5rem;
+    }
+    
+
+/* --------- RESPONSIVE --------- */
+
+/* MIN 435px */
+@media screen and (min-width: 435px) {
+}
+@media screen and (min-width: 450px) {
+}
+
+/* MIN 768px */
+@media screen and (min-width: 768px) {
+    #FS1 {
+        width: calc(20rem);
+        margin: 0 40px;
+    }
+    #followUs {
+        font-size: 4rem;  
+    }
+    #blocFollowUs {
+        margin: 5px 50px 0px 50px;
+    }
+}
+
+/* MIN 1200px */
+@media screen and (min-width: 1200px) {
+    #navHeader > a {
+        justify-content: center;
+    }
+    #logos {
+        display: flex;
+    }
+    #logoFacebook {
+        margin-right: 10px;
+    }
+    #logoFacebook, #logoInstagram {
+        width: 50px;
+        height: 50px;
+    }
+    #logoFacebook > i {
+        font-size: 1rem;  
+    }
+    #logoInstagram > i {
+        font-size: 1rem;
+    }
+
+    #navHeader ul {
+      font-size: 1rem;
+      display: flex;  
+    }
+    #navHeader ul > li > a {
+        /* width: 300px; */
+        margin: 0 10px;
+    }
+
+    /* BARRE DE RECHERCHE */
+    #navHeader form  {
+        margin: 20px;
+    }
+    #navHeader form p > input {
+        margin-left: 10px;
+        padding: 10px 0;
+    }
+    
+    /* ICONES USER & BASKET */
+    #logos2 {
+        margin: 0 20px;        
+    }
+    #iconUser i {
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+    #iconBasket i {
+        font-size: 2rem;
+        padding: 10px 0;
+        margin-left: 10px;
+    }
+
+    /* BLOC HERO */
+    #hero h1 {
+        font-size: calc(3.2rem + 3vw);
+        margin: 10px 0;
+        margin-top: 40px;
+    }
+    #hero h3 {
+        font-size: calc(0.10rem + 2vw);
+        margin: 10px 0;
+        margin-top: 40px;
+    } 
+    #hero > a {
+        font-size: calc(0.05rem + 2vw);
+        margin-bottom: 150px;
+    }
+
+    #blocPresentation1 h2 {
+        font-size: 3rem;
+    }
+    #blocPresentation1 h3 {
+        font-size: 2rem;
+    }
+    #blocPresentation1 p {
+        font-size: 1.3rem;
+    }
+    #blocPresentation1 a {
+        font-size: 1.3rem;
+    }
+    #blocPresentation2 img:first-child {
+        max-width: 60%;
+        top: -150px;
+        left: -100px;
+    }
+    #blocPresentation2 h2 {
+        font-size: 3rem;
+    }
+    #blocPresentation2 h3 {
+        font-size: 2rem;
+    }
+    #blocPresentation2 p {
+        font-size: 1.3rem;
+    }
+    #blocPresentation2 a {
+        font-size: 1.3rem;
+    }
+
+    /* PRODUITS CBD */
+    #produitCBD {
+        margin: 0 30px;
+        font-size: 6rem;
+    }
+
+    /* BLOC CATEGORIES */
+    #categories {
+        margin-top: 75px;
+    }
+
+    #FS1 {
+        width: calc(30rem);
+        margin: 0 100px;
+    }
+    #followUs {
+        font-size: 6rem;  
+    }
+    #blocFollowUs {
+        margin: 25px 50px 0px 50px;
+    }
+    footer a {
+        font-size: 1rem;
+    }
+    footer > a {
+        font-size: 5rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    #navHeader > a {
+        font-size: 10rem;
+    }
+    #blocPresentation2 img:first-child {
+        max-width: 15vw;
+        top: -150px;
+        left: -100px;
+    }
+
+    #FS1 {
+        width: calc(60rem);
+        margin: 0 150px;
+    }
+
+    footer > a {
+        font-size: 6rem;
+    }
+}
+
+/* -------------------------------------- */
